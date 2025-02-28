@@ -1,7 +1,8 @@
 class Api::V1::UsersController < ApplicationController
 
-  def Create
-    User.create(username:params[:username])
+  def create
+    user = User.create(username:params[:username])
+    render json: UserSerializer.user_created_confirmation(user)
   end
 
   private
