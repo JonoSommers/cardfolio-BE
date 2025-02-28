@@ -417,12 +417,71 @@
           1,
           null,
           1,
-          2,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/spec/requests/api/v1/users_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1740761983
+    "timestamp": 1740762250
   }
 }
