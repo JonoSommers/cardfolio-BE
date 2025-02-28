@@ -10,4 +10,12 @@ RSpec.describe User, type: :model do
     it { should have_many :binders }
     it { should have_many(:binder_cards).through(:binders) }
   end
+
+  describe "instance methods" do
+    it 'creates a default binder upon user creation' do
+      user = User.create(username: "billy123")
+
+      expect(user.binders[0][:name]).to eq("Default Binder")
+    end
+  end
 end
