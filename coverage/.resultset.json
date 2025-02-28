@@ -1,21 +1,20 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/spec/requests/api/v1/users_request_spec.rb": {
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/spec/models/binder_card_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
-          1,
+          2,
+          2,
+          2,
+          null,
           null,
           1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
+          2,
+          2,
           null,
           null
         ]
@@ -306,31 +305,10 @@
           null
         ]
       },
-      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/controllers/api/v1/users_controller.rb": {
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/models/BinderCard.rb": {
         "lines": [
           1,
-          null,
           1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/models/User.rb": {
-        "lines": [
           1,
           1,
           null,
@@ -346,24 +324,105 @@
           null
         ]
       },
-      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/serializers/user_serializer.rb": {
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/spec/models/binder_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/models/Binder.rb": {
         "lines": [
           1,
           1,
           1,
           null,
           1,
+          1,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/spec/models/card_spec.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/models/Card.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           1,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/joeldavalos/Mod3_repeat/Projects/cardfolio-BE/app/models/User.rb": {
+        "lines": [
+          1,
+          1,
           null,
+          1,
+          1,
+          1,
           null,
+          1,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1740760780
+    "timestamp": 1740761983
   }
 }
