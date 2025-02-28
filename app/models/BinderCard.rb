@@ -1,8 +1,8 @@
 class BinderCard < ApplicationRecord
-    validates: binders, presence: true
-    validates: card, presence: true
-    validates: favorite, presence: true
+    validates :binder, presence: true
+    validates :card, presence: true
+    validates :favorite, presence: true
 
-    has_many :cards, through: :binders
-    has_many :binders
+    belongs_to :binder
+    belongs_to :card
 end
