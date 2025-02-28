@@ -5,7 +5,7 @@ class UserSerializer
   def self.user_created_confirmation(user)
     {
       data: {
-        attributes: user.username
+        attributes: "The username #{user.username} has been successfully created!"
       }
     }
     
