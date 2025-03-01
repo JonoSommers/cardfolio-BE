@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_02_28_002359) do
+ActiveRecord::Schema[7.1].define(version: 2025_02_28_221310) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "binder_cards", force: :cascade do |t|
     t.bigint "binder_id", null: false
     t.bigint "card_id", null: false
-    t.boolean "favorite"
+    t.boolean "favorite", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["binder_id"], name: "index_binder_cards_on_binder_id"
@@ -35,7 +35,7 @@ ActiveRecord::Schema[7.1].define(version: 2025_02_28_002359) do
   create_table "cards", force: :cascade do |t|
     t.string "name"
     t.string "image_url"
-    t.integer "type"
+    t.integer "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

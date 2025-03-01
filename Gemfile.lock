@@ -170,6 +170,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.10)
+    rack-cors (2.0.2)
+      rack (>= 2.0.0)
     rack-session (2.1.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -270,6 +272,7 @@ DEPENDENCIES
   pgreset
   pry
   puma (>= 5.0)
+  rack-cors
   rails (~> 7.1.5, >= 7.1.5.1)
   rspec-rails
   shoulda-matchers
