@@ -12,7 +12,7 @@ class Card < ApplicationRecord
       if check_existing_cards(card_params[:image_url])
         binder_card_id = check_existing_cards(card_params[:image_url])
       else
-        card = create(name: card_params[:name], image_url: card_params[:image_url], category: card_params[:category].to_sym)
+        card = create(name: card_params[:name], image_url: card_params[:image_url], category: card_params[:category])
         binder_card_id = card.id
       end
 
