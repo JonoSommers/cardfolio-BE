@@ -8,15 +8,15 @@ class Card < ApplicationRecord
 
     enum category: {pokemon: 0, magic_the_gathering: 1}
 
-    def self.create_new_card(card_params, user, binder_id)
+    def self.create_new_card(card_params, user_info)
       if check_existing_cards(card_params[:image_url])
         binder_card_id = check_existing_cards(card_params[:image_url])
       else
-        card = create(name: card_params[:name], image_url: card_params[:image_url], category: card_params[:category])
+        card = create!(name: card_params[:name], image_url: card_params[:image_url], category: card_params[:category])
         binder_card_id = card.id
       end
 
-      return Binder.find_users_binder(user, binder_id, binder_card_id)
+      return Binder.find_users_binder(user_info, binder_card_id)
     end
     
     def self.check_existing_cards(card_img)
