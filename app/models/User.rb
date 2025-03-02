@@ -9,9 +9,4 @@ class User < ApplicationRecord
       self.binders.create(name: "Default Binder")
     end
 
-    def new_binder_creation(binder_name)
-      if binders.count < 2
-        return binders.create(name: binder_name)
-      end
-    end
 end
