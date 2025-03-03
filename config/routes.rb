@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:create] do 
+      resources :users, only: [:create, :show] do 
         resources :binders, only: [:create, :update] do 
           resources :binder_cards, only: [:create]
         end

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/spec/requests/api/v1/binder_cards_request_spec.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/spec/requests/api/v1/binder_cards_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -75,7 +75,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/spec/rails_helper.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -155,7 +155,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/environment.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -164,7 +164,7 @@
           1
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/application.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/application.rb": {
         "lines": [
           1,
           null,
@@ -212,7 +212,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/boot.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -220,7 +220,7 @@
           1
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/environments/test.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -288,7 +288,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/initializers/cors.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -308,7 +308,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/initializers/filter_parameter_logging.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -320,7 +320,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/initializers/inflections.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -340,7 +340,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/config/routes.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -363,7 +363,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/spec/requests/api/v1/binder_request_spec.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/spec/requests/api/v1/binder_request_spec.rb": {
         "lines": [
           1,
           null,
@@ -411,14 +411,14 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/spec/requests/api/v1/users_request_spec.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/spec/requests/api/v1/users_request_spec.rb": {
         "lines": [
           1,
           null,
           1,
           null,
           1,
-          1,
+          2,
           null,
           null,
           1,
@@ -436,12 +436,38 @@
           1,
           1,
           1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          null,
+          null,
           null,
           null,
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/models/User.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/models/User.rb": {
         "lines": [
           1,
           1,
@@ -451,20 +477,21 @@
           1,
           null,
           1,
-          9,
+          10,
+          null,
           null,
           null,
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/models/application_record.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/models/Binder.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/models/Binder.rb": {
         "lines": [
           1,
           1,
@@ -482,16 +509,16 @@
           1,
           null,
           1,
-          10,
+          11,
           null,
-          10,
+          11,
           0,
           null,
           null,
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/controllers/api/v1/binder_cards_controller.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/controllers/api/v1/binder_cards_controller.rb": {
         "lines": [
           1,
           1,
@@ -508,13 +535,13 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/controllers/application_controller.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/models/BinderCard.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/models/BinderCard.rb": {
         "lines": [
           1,
           1,
@@ -531,7 +558,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/models/Card.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/models/Card.rb": {
         "lines": [
           1,
           1,
@@ -565,7 +592,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/serializers/binder_card_serializer.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/serializers/binder_card_serializer.rb": {
         "lines": [
           1,
           1,
@@ -589,7 +616,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/controllers/api/v1/binders_controller.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/controllers/api/v1/binders_controller.rb": {
         "lines": [
           1,
           null,
@@ -614,7 +641,7 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/serializers/binder_serializer.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/serializers/binder_serializer.rb": {
         "lines": [
           1,
           1,
@@ -624,9 +651,14 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/controllers/api/v1/users_controller.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           1,
+          null,
+          1,
+          2,
+          2,
+          null,
           null,
           1,
           1,
@@ -641,17 +673,16 @@
           null
         ]
       },
-      "/Users/mhaefling/Turing/Mod3/projects/cardfolio-be/app/serializers/user_serializer.rb": {
+      "/Users/paulknapp/turing_work/3modV2/projects/cardboard_consultancy/cardfolio-BE/app/serializers/user_serializer.rb": {
         "lines": [
           1,
           1,
           1,
           1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1741017860
+    "timestamp": 1741044281
   }
 }

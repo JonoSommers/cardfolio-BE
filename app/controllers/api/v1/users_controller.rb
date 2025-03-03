@@ -5,9 +5,14 @@ class Api::V1::UsersController < ApplicationController
     render json: UserSerializer.new(user)
   end
 
+  def show
+    user = User.find_by(id: params[:id])
+    render json: UserSerializer.new(user)
+  end
+
   private
 
   def user_params
-    params.permit(:username)
+    params.permit(:username, :id)
   end
 end

@@ -9,4 +9,5 @@ class User < ApplicationRecord
       self.binders.create(name: "Default Binder")
     end
 
+    
 end
