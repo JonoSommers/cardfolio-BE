@@ -1,18 +1,20 @@
 class BinderCardSerializer
   include JSONAPI::Serializer
-  attributes :name, :image_url, :category
+  set_type :binder_card
+  attributes :favorite
 
-  def self.binder_card_created_confirmation(card)
+  attribute :binder do |binder_card|
     {
-      data: {
-        binder_card: {
-          name: card.name,
-          attributes: {
-            image_url: card.image_url,
-            category: card.category
-          }
-        }
-      }
+      id: binder_card.binder.id,
+      name: binder_card.binder.name,
+    }
+  end
+
+  attribute :card do |binder_card|
+    {
+      name: binder_card.card.name,
+      image_url: binder_card.card.image_url,
+      category: binder_card.card.category
     }
   end
 end

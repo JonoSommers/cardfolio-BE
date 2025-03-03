@@ -1,13 +1,6 @@
 class UserSerializer
   include JSONAPI::Serializer
+  set_type :user
   attributes :username
 
-  def self.user_created_confirmation(user)
-    {
-      data: {
-        attributes: "The username #{user.username} has been successfully created!"
-      }
-    }
-    
-  end
 end
