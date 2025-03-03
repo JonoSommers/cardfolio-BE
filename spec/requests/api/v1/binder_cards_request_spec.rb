@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "BinderCards Controller", type: :request do
 
   before :each do
-    User.destroy_all
+    User.delete_all
     @testuser = User.create(username: "testuser")
     @testuser2 = User.create(username: "testuser2")
   end

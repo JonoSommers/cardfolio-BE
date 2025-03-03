@@ -1,5 +1,6 @@
 class BinderCard < ApplicationRecord
     validates :binder, presence: true
+    validates :favorite, inclusion: { in: [true, false] }
     validates :card, presence: true, uniqueness: { scope: :binder, message: "This card is already in your binder" }
     
 

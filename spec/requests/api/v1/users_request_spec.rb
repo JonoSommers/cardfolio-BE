@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe "User Controller", type: :request do
+
+  before :each do 
+    User.delete_all
+  end
+  
   describe "Create Action" do
     it "Can Create New User" do 
       user_params = {
