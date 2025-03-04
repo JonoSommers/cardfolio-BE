@@ -1,7 +1,7 @@
 class BinderCardSerializer
   include JSONAPI::Serializer
   set_type :binder_card
-  attributes :favorite
+  # attributes :favorite
 
   attribute :binder do |binder_card|
     {
