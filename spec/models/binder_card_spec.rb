@@ -11,4 +11,15 @@ RSpec.describe BinderCard, type: :model do
     it { should belong_to :binder }
     it { should belong_to :card }
   end
+
+  describe "add_card_to_favorites(binder_card)" do
+    it 'will update a binder_cards favorite attribute to true if it exists' do
+      binder = create(:binder)
+      card = create(:card)
+      binder_card = create(:binder_card, binder: binder, card: card, favorite: false)
+
+      BinderCard.add_card_to_favorites(binder_card)
+      expect(binder_card.reload.favorite).to be true
+    end
+  end
 end

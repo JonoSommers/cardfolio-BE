@@ -23,8 +23,8 @@ RSpec.describe "BinderCards Controller", type: :request do
       expect(json[:type]).to be_a(String)
       expect(json[:type]).to eq("binder_card")
       expect(json[:attributes]).to be_a(Hash)
-      expect(json[:attributes][:favorite]).to be_in([true, false])
-      expect(json[:attributes][:favorite]).to eq(false)
+      expect(json[:attributes][:favorite][:favorite]).to be_in([true, false])
+      expect(json[:attributes][:favorite][:favorite]).to eq(false)
       expect(json[:attributes][:binder][:id]).to be_a(Integer)
       expect(json[:attributes][:binder][:name]).to be_a(String)
       expect(json[:attributes][:binder][:name]).to eq("Default Binder")
@@ -49,8 +49,8 @@ RSpec.describe "BinderCards Controller", type: :request do
       json2 = JSON.parse(response.body, symbolize_names: true)[:data]
 
       expect(json[:type]).to eq("binder_card")
-      expect(json[:attributes][:favorite]).to be_in([true, false])
-      expect(json[:attributes][:favorite]).to eq(false)
+      expect(json[:attributes][:favorite][:favorite]).to be_in([true, false])
+      expect(json[:attributes][:favorite][:favorite]).to eq(false)
       expect(json[:attributes][:binder][:id]).to be_a(Integer)
       expect(json[:attributes][:binder][:name]).to eq("Default Binder")
       expect(json[:attributes][:card][:name]).to eq("test_card2")
@@ -58,8 +58,8 @@ RSpec.describe "BinderCards Controller", type: :request do
       expect(json[:attributes][:card][:category]).to eq("pokemon")
 
       expect(json2[:type]).to eq("binder_card")
-      expect(json2[:attributes][:favorite]).to be_in([true, false])
-      expect(json2[:attributes][:favorite]).to eq(false)
+      expect(json2[:attributes][:favorite][:favorite]).to be_in([true, false])
+      expect(json2[:attributes][:favorite][:favorite]).to eq(false)
       expect(json2[:attributes][:binder][:id]).to be_a(Integer)
       expect(json2[:attributes][:binder][:name]).to eq("Default Binder")
       expect(json2[:attributes][:card][:name]).to eq("test_card2")
