@@ -23,8 +23,8 @@ RSpec.describe "BinderCards Controller", type: :request do
       expect(json[:type]).to be_a(String)
       expect(json[:type]).to eq("binder_card")
       expect(json[:attributes]).to be_a(Hash)
-      expect(json[:attributes][:favorite]).to be_in([true, false])
-      expect(json[:attributes][:favorite]).to eq(false)
+      expect(json[:attributes][:favorite][:favorite]).to be_in([true, false])
+      expect(json[:attributes][:favorite][:favorite]).to eq(false)
       expect(json[:attributes][:binder][:id]).to be_a(Integer)
       expect(json[:attributes][:binder][:name]).to be_a(String)
       expect(json[:attributes][:binder][:name]).to eq("Default Binder")
@@ -49,8 +49,8 @@ RSpec.describe "BinderCards Controller", type: :request do
       json2 = JSON.parse(response.body, symbolize_names: true)[:data]
 
       expect(json[:type]).to eq("binder_card")
-      expect(json[:attributes][:favorite]).to be_in([true, false])
-      expect(json[:attributes][:favorite]).to eq(false)
+      expect(json[:attributes][:favorite][:favorite]).to be_in([true, false])
+      expect(json[:attributes][:favorite][:favorite]).to eq(false)
       expect(json[:attributes][:binder][:id]).to be_a(Integer)
       expect(json[:attributes][:binder][:name]).to eq("Default Binder")
       expect(json[:attributes][:card][:name]).to eq("test_card2")
@@ -58,13 +58,30 @@ RSpec.describe "BinderCards Controller", type: :request do
       expect(json[:attributes][:card][:category]).to eq("pokemon")
 
       expect(json2[:type]).to eq("binder_card")
-      expect(json2[:attributes][:favorite]).to be_in([true, false])
-      expect(json2[:attributes][:favorite]).to eq(false)
+      expect(json2[:attributes][:favorite][:favorite]).to be_in([true, false])
+      expect(json2[:attributes][:favorite][:favorite]).to eq(false)
       expect(json2[:attributes][:binder][:id]).to be_a(Integer)
       expect(json2[:attributes][:binder][:name]).to eq("Default Binder")
       expect(json2[:attributes][:card][:name]).to eq("test_card2")
       expect(json2[:attributes][:card][:image_url]).to eq("http://www.test_url2.com/")
       expect(json2[:attributes][:card][:category]).to eq("pokemon")
+    end
+  end
+
+  describe 'UPDATE' do
+    it 'updates a binder_card favrite from false to true' do
+      card = Card.create!(name: "test_card", image_url: "http://www.test_url.com/", category: "pokemon")
+      binder_card = BinderCard.create!(binder: @testuser.binders[0], card: card, favorite: false)
+
+      expect(binder_card.favorite).to be(false)
+
+      patch "/api/v1/users/#{@testuser.id}/binders/#{@testuser.binders[0].id}/binder_cards/#{binder_card.id}", params: { favorite: true }, as: :json
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to have_http_status(:ok)
+
+      expect(json[:data][:attributes][:favorite][:favorite]).to eq(true)
     end
   end
 end
