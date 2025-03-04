@@ -74,7 +74,6 @@ RSpec.describe "User Controller", type: :request do
       expect(response_json[:attributes][:binders].last[:binders_cards]).to be_an(Array)
       expect(response_json[:attributes][:binders].last[:binders_cards].count).to eq(3)
       expect(response_json[:attributes][:binders].last[:binders_cards].map {|card| card[:data][:attributes][:card][:name]}).to include('Latias', 'Zapdos', 'Kyurem')
-
     end
   end
 end

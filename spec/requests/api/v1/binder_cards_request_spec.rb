@@ -67,4 +67,21 @@ RSpec.describe "BinderCards Controller", type: :request do
       expect(json2[:attributes][:card][:category]).to eq("pokemon")
     end
   end
+
+  describe 'UPDATE' do
+    it 'updates a binder_card favrite from false to true' do
+      card = Card.create!(name: "test_card", image_url: "http://www.test_url.com/", category: "pokemon")
+      binder_card = BinderCard.create!(binder: @testuser.binders[0], card: card, favorite: false)
+
+      expect(binder_card.favorite).to be(false)
+
+      patch "/api/v1/users/#{@testuser.id}/binders/#{@testuser.binders[0].id}/binder_cards/#{binder_card.id}", params: { favorite: true }, as: :json
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to have_http_status(:ok)
+
+      expect(json[:data][:attributes][:favorite][:favorite]).to eq(true)
+    end
+  end
 end
