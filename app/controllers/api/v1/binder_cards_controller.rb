@@ -5,6 +5,14 @@ class Api::V1::BinderCardsController < ApplicationController
     render json: BinderCardSerializer.new(binder_card)
   end
 
+  def update
+    user = User.find_by(id: params[:user_id])
+    binder = user.binders.find_by(id: params[:binder_id])
+    binder_card = binder.binder_cards.find_by(id: params[:id])
+    BinderCard.add_card_to_favorites(binder_card)
+    render json: BinderCardSerializer.new(binder_card)
+  end
+
   private
 
   def card_params

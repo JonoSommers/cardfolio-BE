@@ -10,4 +10,10 @@ class BinderCard < ApplicationRecord
     def self.create_binder_card(binder, binder_card_id)
       return binder.binder_cards.create!(card_id: binder_card_id)
     end
+
+    def self.add_card_to_favorites(binder_card)
+      if binder_card
+        binder_card.update(favorite: true)
+      end
+    end
 end
