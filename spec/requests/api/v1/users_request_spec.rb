@@ -25,6 +25,26 @@ RSpec.describe "User Controller", type: :request do
     end
   end
 
+  describe 'GET /api/v1/user' do
+    it 'can get all users' do
+      user1 = create(:user, username: 'envytash')
+      user2 = create(:user, username: 'jonbonsilver')
+      user3 = create(:user, username: 'hannaMontana')
+      user4 = create(:user, username: 'mattman')
+
+      get "/api/v1/users/"
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json[:data]).to be_a Array
+      expect(json[:data].count).to eq(4)
+      expect(json[:data].first[:attributes]).to include(:username)
+    end
+  end
+
 
   describe "GET /api/v1/users/:id" do 
     it "Can Show User" do
