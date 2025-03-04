@@ -5,6 +5,7 @@ class Binder < ApplicationRecord
 
   belongs_to :user
   has_many :binder_cards
+  has_many :cards, through: :binder_cards
 
   def self.find_users_binder(user_info, binder_card_id)
     binder = user_info[:user].binders.find_by(id: user_info[:binder_id])
