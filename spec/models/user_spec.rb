@@ -1,6 +1,11 @@
 require "rails_helper"
 
 RSpec.describe User, type: :model do
+
+  before :each do 
+    User.delete_all
+  end
+  
   describe "validations" do
     it { should validate_presence_of(:username) }
     it { should validate_uniqueness_of(:username) }

@@ -7,11 +7,13 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:create]
-
+      resources :users, only: [:create] do 
+        resources :binders, only: [:create, :update] do 
+          resources :binder_cards, only: [:create]
+        end
+      end
     end
   end
-
   # Defines the root path route ("/")
   # root "posts#index"
 end
