@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  rescue_from ActionDispatch::Http::Parameters::ParseError, with: :bad_request
+  rescue_from ActionDispatch::Http::Parameters::ParseError, with: :record_invalid
   rescue_from ActionController::ParameterMissing, with: :bad_request
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   rescue_from ActiveRecord::RecordInvalid, with: :record_invalid
@@ -16,7 +16,7 @@ class ApplicationController < ActionController::API
   end
 
   def record_invalid(exception)
-    clean_message = exception.message.sub(/\A(Validation failed: )?(Message |Card )/, "")
+    clean_message = exception.record.errors.full_messages.to_sentence
 
     render json: ErrorSerializer.format_error(422, clean_message, "Unprocessable_entity"), status: :unprocessable_entity
   end

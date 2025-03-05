@@ -42,8 +42,8 @@ RSpec.describe "Binder Controller", type: :request do
     end
   end
 
-  describe "Shows a 400 error" do 
-    it "Can show a status 400 error" do
+  describe "Shows a 422 error" do 
+    it "Can show a status 422 error if user tries to make more than 2 binders" do
       binder_params = {
         "binder_name": "My Tournament Deck" 
       }
@@ -53,8 +53,41 @@ RSpec.describe "Binder Controller", type: :request do
   
       expect(response.status).to eq(422)
       json = JSON.parse(response.body, symbolize_names: true)
-      
-      expect(json[:errors]).to be_present
+      expect(json[:error]).to be_present
+      expect(json[:error][:status]).to be_a(String)
+      expect(json[:error][:status]).to eq("422")
+      expect(json[:error][:title]).to be_a(String)
+      expect(json[:error][:title]).to eq("Error")
+      expect(json[:error][:message]).to be_a(String)
+      expect(json[:error][:message]).to eq("Users can only have two binders!")
+      expect(json[:error][:detail]).to be_a(String)
+      expect(json[:error][:detail]).to eq("Unprocessable_entity")
     end
   end
+
+  describe "Shows a 422 error" do 
+    it "Can show a status 422 error if name is blank" do
+      binder_params = {
+        "binder_name": "" 
+      }
+
+      post "http://localhost:3000/api/v1/users/#{@testuser.id}/binders", params: binder_params, as: :json
+      post "http://localhost:3000/api/v1/users/#{@testuser.id}/binders", params: binder_params, as: :json
+  
+      expect(response.status).to eq(422)
+      json = JSON.parse(response.body, symbolize_names: true)
+      
+      expect(json[:error]).to be_present
+      expect(json[:error][:status]).to be_a(String)
+      expect(json[:error][:status]).to eq("422")
+      expect(json[:error][:title]).to be_a(String)
+      expect(json[:error][:title]).to eq("Error")
+      expect(json[:error][:message]).to be_a(String)
+      expect(json[:error][:message]).to eq("Name can't be blank")
+      expect(json[:error][:detail]).to be_a(String)
+      expect(json[:error][:detail]).to eq("Unprocessable_entity")
+    end
+  end
+
+
 end

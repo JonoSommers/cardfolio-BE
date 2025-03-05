@@ -18,7 +18,7 @@ class Binder < ApplicationRecord
     return unless user
 
     if user.binders.count == 2
-      errors.add(:message, "Users can only have two binders!")
+      errors.add(:base, "Users can only have two binders!")
     end
   end
 end
