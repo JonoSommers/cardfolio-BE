@@ -1,8 +1,7 @@
 class Api::V1::BinderCardsController < ApplicationController
   def create
     user = User.find_by(id: params[:user_id])
-    binder = Binder.find_by(id: params[:binder_id]) 
-    card = Card.create_new_card(card_params, { user: user, binder_id: params[:binder_id]})
+    card = Card.create_new_card(card_params, { user: user, binder_id: params[:binder_id] })
     render json: BinderCardSerializer.new(card)
   end
 
