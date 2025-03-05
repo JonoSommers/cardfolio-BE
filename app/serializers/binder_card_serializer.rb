@@ -1,7 +1,6 @@
 class BinderCardSerializer
   include JSONAPI::Serializer
   set_type :binder_card
-  attributes :favorite
 
   attribute :binder do |binder_card|
     {
@@ -15,6 +14,12 @@ class BinderCardSerializer
       name: binder_card.card.name,
       image_url: binder_card.card.image_url,
       category: binder_card.card.category
+    }
+  end
+
+  attribute :favorite do |binder_card|
+    {
+      favorite: binder_card.favorite
     }
   end
 end

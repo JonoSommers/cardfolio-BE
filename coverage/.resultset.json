@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/spec/requests/api/v1/binder_request_spec.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/requests/api/v1/binder_cards_request_spec.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           1,
@@ -62,10 +66,31 @@
           1,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/spec/rails_helper.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/rails_helper.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           null,
           1,
@@ -107,6 +132,8 @@
           null,
           null,
           null,
+          1,
+          null,
           null,
           null,
           null,
@@ -145,7 +172,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/environment.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/environment.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           null,
           1,
@@ -154,7 +185,11 @@
           1
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/application.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/application.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           null,
@@ -202,7 +237,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/boot.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/boot.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           null,
@@ -210,7 +249,11 @@
           1
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/environments/test.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/environments/test.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           null,
@@ -278,7 +321,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/initializers/cors.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/initializers/cors.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           null,
           null,
@@ -298,7 +345,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/initializers/filter_parameter_logging.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/initializers/filter_parameter_logging.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           null,
           null,
@@ -310,7 +361,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/initializers/inflections.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/initializers/inflections.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           null,
           null,
@@ -330,7 +385,52 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/config/routes.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/factories/binder_cards.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/factories/binders.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/factories/cards.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/factories/users.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/config/routes.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           null,
@@ -353,7 +453,11 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/app/models/User.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/requests/api/v1/binder_request_spec.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           1,
@@ -369,14 +473,100 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/app/models/application_record.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/spec/requests/api/v1/users_request_spec.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           1,
+<<<<<<< HEAD
           null
         ]
       },
       "/Users/montyp/mod3/cardfolio-BE/app/models/Binder.rb": {
+=======
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/models/User.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           1,
@@ -394,15 +584,53 @@
           1,
           null,
           1,
-          9,
+          16,
           null,
+<<<<<<< HEAD
           9,
           1,
+=======
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/models/Binder.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          1,
+          null,
+          1,
+          18,
+          null,
+          18,
+          0,
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
           null,
           null,
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/app/controllers/api/v1/binders_controller.rb": {
         "lines": [
           1,
@@ -410,6 +638,80 @@
           1,
           3,
           3,
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/controllers/api/v1/binder_cards_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/models/BinderCard.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/models/Card.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          3,
+          1,
+          null,
+          2,
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
           2,
           null,
           null,
@@ -428,18 +730,100 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/app/controllers/application_controller.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/serializers/binder_card_serializer.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
+        "lines": [
+          1,
+          1,
+          1,
+<<<<<<< HEAD
+          1,
+=======
+          null,
+          1,
+          null,
+          7,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          7,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          7,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/controllers/api/v1/binders_controller.rb": {
+        "lines": [
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+<<<<<<< HEAD
+=======
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/serializers/binder_serializer.rb": {
         "lines": [
           1,
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
           1,
           null,
           1,
+          1,
+          1,
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
           0,
           null,
           null,
@@ -456,12 +840,25 @@
           null
         ]
       },
+<<<<<<< HEAD
       "/Users/montyp/mod3/cardfolio-BE/app/serializers/binder_serializer.rb": {
+=======
+      "/Users/jonosommers/turing_work/3mod/projects/cardfolio-BE/app/serializers/user_serializer.rb": {
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
         "lines": [
           1,
           1,
           1,
           1,
+          null,
+          1,
+          6,
+          null,
+          7,
+          null,
+          3,
+          null,
+          null,
           null,
           null
         ]
@@ -499,6 +896,10 @@
         ]
       }
     },
+<<<<<<< HEAD
     "timestamp": 1741133008
+=======
+    "timestamp": 1741131247
+>>>>>>> d45dd472a80977f1e038a76cffef942252964a58
   }
 }
