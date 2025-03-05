@@ -9,7 +9,9 @@ class Api::V1::BinderCardsController < ApplicationController
     user = User.find_by(id: params[:user_id])
     binder = user.binders.find_by(id: params[:binder_id])
     binder_card = binder.binder_cards.find_by(id: params[:id])
-    BinderCard.add_card_to_favorites(binder_card)
+
+    binder_card.add_card_to_favorites if binder_card
+
     render json: BinderCardSerializer.new(binder_card)
   end
 
