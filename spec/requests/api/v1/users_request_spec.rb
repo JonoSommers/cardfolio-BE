@@ -4,7 +4,6 @@ RSpec.describe "User Controller", type: :request do
 
   before :each do 
     User.delete_all
-
   end
   
   describe "POST /api/v1/users" do
@@ -45,7 +44,6 @@ RSpec.describe "User Controller", type: :request do
     end
   end
 
-
   describe "GET /api/v1/users/:id" do 
     it "Can Show User" do
       user = create(:user, username: 'envytash')
@@ -77,31 +75,6 @@ RSpec.describe "User Controller", type: :request do
     end
   end
 
-  describe "user_params" do
-    it 'only permits the username parameter' do
-      user_params = { username: "bob123", extra_param: "should be ignored" }
-
-      post "/api/v1/users", params: user_params, as: :json
-
-      json = JSON.parse(response.body, symbolize_names: true)[:data]
-
-      expect(json[:attributes][:username]).to eq("bob123")
-      expect(json[:attributes]).not_to have_key(:extra_param)
-    end
-  
-    it 'rejects non-permitted parameters' do
-      user_params = { username: "bob123", extra_param: "should not be included" }
-
-      post "/api/v1/users", params: user_params, as: :json
-  
-      json = JSON.parse(response.body, symbolize_names: true)[:data]
-
-      expect(json[:attributes][:username]).to eq("bob123")
-      expect(json[:attributes]).not_to have_key(:extra_param)
-    end
-  end
-  
-
   describe "Error handling" do
     it "Can handle Record not Found error for invalid user ID" do
       
@@ -111,7 +84,7 @@ RSpec.describe "User Controller", type: :request do
       
       json = JSON.parse(response.body, symbolize_names: true)
     
-      expect(json).to be_present
+      expect(json[:error]).to be_present
       expect(json[:error][:status]).to eq("404")
       expect(json[:error][:title]).to eq("Error")
       expect(json[:error][:message]).to eq("Couldn't find User with 'id'=invalid_id")

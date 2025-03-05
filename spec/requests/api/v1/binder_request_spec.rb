@@ -25,7 +25,6 @@ RSpec.describe "Binder Controller", type: :request do
       expect(json[:attributes][:name]).to eq("My Pokemon Cards")
       expect(json[:attributes][:user_id]).to be_a(Integer)
     end
-
   end
 
   describe "Update Action" do
@@ -44,6 +43,7 @@ RSpec.describe "Binder Controller", type: :request do
 
   describe "Shows a 422 error" do 
     it "Can show a status 422 error if user tries to make more than 2 binders" do
+      
       binder_params = {
         "binder_name": "My Tournament Deck" 
       }
@@ -53,6 +53,7 @@ RSpec.describe "Binder Controller", type: :request do
   
       expect(response.status).to eq(422)
       json = JSON.parse(response.body, symbolize_names: true)
+
       expect(json[:error]).to be_present
       expect(json[:error][:status]).to be_a(String)
       expect(json[:error][:status]).to eq("422")
@@ -63,7 +64,6 @@ RSpec.describe "Binder Controller", type: :request do
       expect(json[:error][:detail]).to be_a(String)
       expect(json[:error][:detail]).to eq("Unprocessable_entity")
     end
-
 
     it "Can show a status 422 error if name is blank" do
       binder_params = {
