@@ -1,5 +1,5 @@
 require 'rails_helper'
-require 'pry'
+
 RSpec.describe "Binder Controller", type: :request do 
 
   before :each do 
@@ -63,9 +63,8 @@ RSpec.describe "Binder Controller", type: :request do
       expect(json[:error][:detail]).to be_a(String)
       expect(json[:error][:detail]).to eq("Unprocessable_entity")
     end
-  end
 
-  describe "Shows a 422 error" do 
+
     it "Can show a status 422 error if name is blank" do
       binder_params = {
         "binder_name": "" 
@@ -88,6 +87,4 @@ RSpec.describe "Binder Controller", type: :request do
       expect(json[:error][:detail]).to eq("Unprocessable_entity")
     end
   end
-
-
 end

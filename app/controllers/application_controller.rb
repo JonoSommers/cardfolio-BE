@@ -1,9 +1,10 @@
 class ApplicationController < ActionController::API
-  rescue_from ActionDispatch::Http::Parameters::ParseError, with: :record_invalid
+
   rescue_from ActionController::ParameterMissing, with: :bad_request
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   rescue_from ActiveRecord::RecordInvalid, with: :record_invalid
-  
+  rescue_from ActionDispatch::Http::Parameters::ParseError, with: :bad_request
+
   private
 
 
