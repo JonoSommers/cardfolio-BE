@@ -77,8 +77,33 @@ RSpec.describe "User Controller", type: :request do
     end
   end
 
+  describe "user_params" do
+    it 'only permits the username parameter' do
+      user_params = { username: "bob123", extra_param: "should be ignored" }
+
+      post "/api/v1/users", params: user_params, as: :json
+
+      json = JSON.parse(response.body, symbolize_names: true)[:data]
+
+      expect(json[:attributes][:username]).to eq("bob123")
+      expect(json[:attributes]).not_to have_key(:extra_param)
+    end
+  
+    it 'rejects non-permitted parameters' do
+      user_params = { username: "bob123", extra_param: "should not be included" }
+
+      post "/api/v1/users", params: user_params, as: :json
+  
+      json = JSON.parse(response.body, symbolize_names: true)[:data]
+
+      expect(json[:attributes][:username]).to eq("bob123")
+      expect(json[:attributes]).not_to have_key(:extra_param)
+    end
+  end
+  
+
   describe "Error handling" do
-    it "Can handle bad request error for invalid user ID" do
+    it "Can handle Record not Found error for invalid user ID" do
       
       get "/api/v1/users/invalid_id"
       

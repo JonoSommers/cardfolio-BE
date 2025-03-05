@@ -84,4 +84,5 @@ RSpec.describe "BinderCards Controller", type: :request do
       expect(json[:data][:attributes][:favorite][:favorite]).to eq(true)
     end
   end
+
 end
