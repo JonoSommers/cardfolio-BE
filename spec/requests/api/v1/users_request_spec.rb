@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+require 'pry'
 RSpec.describe "User Controller", type: :request do
 
   before :each do 
@@ -74,6 +74,23 @@ RSpec.describe "User Controller", type: :request do
       expect(response_json[:attributes][:binders].last[:binders_cards]).to be_an(Array)
       expect(response_json[:attributes][:binders].last[:binders_cards].count).to eq(3)
       expect(response_json[:attributes][:binders].last[:binders_cards].map {|card| card[:data][:attributes][:card][:name]}).to include('Latias', 'Zapdos', 'Kyurem')
+    end
+  end
+
+  describe "Error handling" do
+    it "Can handle bad request error for invalid user ID" do
+      
+      get "/api/v1/users/invalid_id"
+      
+      expect(response.status).to eq(404)
+      
+      json = JSON.parse(response.body, symbolize_names: true)
+    
+      expect(json).to be_present
+      expect(json[:error][:status]).to eq("404")
+      expect(json[:error][:title]).to eq("Error")
+      expect(json[:error][:message]).to eq("Couldn't find User with 'id'=invalid_id")
+      expect(json[:error][:detail]).to eq("Record Not Found")
     end
   end
 end

@@ -5,6 +5,8 @@ RSpec.describe Binder, type: :model do
   before :each do 
     User.delete_all
     @testuser = User.create(username: "testuser")
+    @testuser.binders.create(name: "My First Binder")  
+    @testuser.binders.create(name: "My Second Binder")
   end
 
   describe "validations" do
@@ -36,13 +38,11 @@ RSpec.describe Binder, type: :model do
 
   describe "Instance Methods" do
     it "Prevents a user from creating more than 2 binders" do 
-      second_binder = @testuser.binders.create(name: "My Second Binder")
-      expect(second_binder).to be_instance_of(Binder)
-      expect(@testuser.binders.count).to eq(2)
 
       third_binder = @testuser.binders.create(name: "My Third Binder")
+      
       expect(third_binder).not_to be_valid
-      expect(third_binder.errors[:message]).to include("Users can only have two binders!")
+      expect(third_binder.errors[:base]).to include("Users can only have two binders!")
     end
   end
 end

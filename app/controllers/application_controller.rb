@@ -17,7 +17,7 @@ class ApplicationController < ActionController::API
   end
 
   def record_invalid(exception)
-    clean_message = exception.record.errors.full_messages.to_sentence
+    clean_message = exception.record.errors.full_messages.to_sentence.gsub("Card", "")
 
     render json: ErrorSerializer.format_error(422, clean_message, "Unprocessable_entity"), status: :unprocessable_entity
   end

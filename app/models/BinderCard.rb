@@ -1,8 +1,7 @@
 class BinderCard < ApplicationRecord
     validates :binder, presence: true
     validates :favorite, inclusion: { in: [true, false] }
-    validates :card, presence: true
-    validate :card_uniqueness_within_binder
+    validates :card, presence: true, uniqueness: { scope: :binder, message: "This card is already in your binder" }
 
     belongs_to :binder
     belongs_to :card
@@ -12,16 +11,14 @@ class BinderCard < ApplicationRecord
     end
 
     def add_card_to_favorites
-      if self
-        self.update(favorite: true)
-      end
+      update(favorite: true)
     end
 
-    private
+    # private
 
-  def card_uniqueness_within_binder
-    if BinderCard.exists?(card_id: card.id, binder_id: binder.id)
-      errors.add(:base, "This card is already in your binder")
-    end
-  end
+    # def favorite_is_boolean
+    #   unless [true, false].include?(favorite)
+    #     errors.add(:favorite, "must be true or false")
+    #   end
+    # end
 end
