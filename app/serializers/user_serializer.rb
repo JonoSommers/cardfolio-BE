@@ -3,7 +3,7 @@ class UserSerializer
   set_type :user
   attributes :username
 
-  attribute :binders do |user|
+  attribute :binders, if: Proc.new { |_user, params| params && params[:show_binders] } do |user|
     user.binders.map do |binder|
       { 
         id: binder.id, 
