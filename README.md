@@ -3,22 +3,42 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+Fork this repo
+Clone and rename this repo: git clone [remote-address] [new-name]
+For example: git clone git@github.com:cordfolio.git cordfolio
+cd into the directory
+Install necessary dependencies with bundle install
+Run your Rails Server with rails s
+The Api endpoints will be accessable at http://localhost:3000/api/v1/
+Enter control + c in your terminal to stop running the server at any time
+To run Rspec testing suite use bundle exec rspec ./spec/models for model tests or ./spec/requests for request tests
+                                             
 
-* System dependencies
+:hammer_and_wrench: Technologies Used, Challenges, Wins & Reflections
 
-* Configuration
+Technologies Used:
+•	Rails, Rspec, Shoulda Matchers, FactoryBot and Faker.
+•	Deployment: Render
 
-* Database creation
+Challenges Faced
+•	Understanding Many to Many database relations
+•	Writing a complex database schema
+•	Correctly Serializing complex data structures
 
-* Database initialization
+Wins & Reflections:
+:white_check_mark: Successfully Built database schema with many to many.
+:white_check_mark: Successfully Deployed our project
+:earth_africa: Link to Deployed Site
 
-* How to run the test suite
+Deployment Link  https://cardfolio-be.onrender.com
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+:busts_in_silhouette: Contributors
 
-* ...
+Joel Davalos
+Montana Pfeifer
+Paul Knapp
+Jono Sommers
+Natasha Vasquez
+Matt Haefling
