@@ -14,7 +14,8 @@ his Rails API serves as the backend for **Cardfolio**, a digital binder app for 
 6.Run your Rails Server with rails s
 7.The Api endpoints will be accessable at http://localhost:3000/api/v1/
 8.Enter control + c in your terminal to stop running the server at any time
-9.To run Rspec testing suite use bundle exec rspec ./spec/models for model tests or ./spec/requests for request tests
+9.All api endpoints can be tested in Postman
+10.To run Rspec testing suite use bundle exec rspec ./spec/models for model tests or ./spec/requests for request tests
 
 
 # 🛠️ Technologies Used, Challenges, Wins & Reflections
