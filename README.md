@@ -1,14 +1,8 @@
 # Cardfolio 
 
-# 📽️ Overview of Project and Goals
+# 📽️ Overview of Project
 
-Rancid Tomatillos is a movie exploration app where users can browse, view details, and interact with movie listings. The project started with mock data and evolved to integrate a backend API, with a focus on a seamless user experience and structured testing.
-
-The main goals of this project include:
-	•	Fetching and displaying movie data dynamically
-	•	Implementing React Router for smooth navigation
-	•	Writing Cypress tests to ensure reliability
-	•	Enhancing the UI with vote counts and styling
+his Rails API serves as the backend for **Cardfolio**, a digital binder app for trading card collectors. It manages user data, binders, and favorite cards, providing a structured way to organize collections.
 
 # Set Up
 1#Set Up
@@ -27,7 +21,7 @@ The main goals of this project include:
 
 ## Technologies Used:
 
-	•	Backend: Rails
+	•	Backend: Rails, Postgresql
 	•	Testing: RSpec, FactoryBot, and Faker, Shoulda Matchers  
 	•	Deployment: Render
 
