@@ -5,7 +5,7 @@
 his Rails API serves as the backend for **Cardfolio**, a digital binder app for trading card collectors. It manages user data, binders, and favorite cards, providing a structured way to organize collections.
 
 # Set Up
-1#Set Up
+
 1.Fork this repo
 2.Clone and rename this repo: git clone [remote-address] [new-name]
 3.For example: git clone git@github.com:cordfolio.git cordfolio
