@@ -12,6 +12,7 @@ jobs:
           POSTGRES_HOST_AUTH_METHOD: trust
     environment:
       RAILS_ENV: test
+      DATABASE_URL: postgres://root@localhost:5432/test_db
     steps:
       - checkout
       - ruby/install-deps
